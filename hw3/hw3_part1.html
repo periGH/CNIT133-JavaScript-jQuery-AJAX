@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT 133 Homework 3">
+    <title>Homework 3-Part 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="part1.js"></script>
+    <style>
+        td:first-child {
+            font-weight: bold;
+        }
+        
+        td:nth-child(2) input {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="body">
+        <h1>Homework 3 Part 1</h1>
+
+        <h2>Student Grades</h2>
+
+        <p>Click to <a id="show">Show</a> / <a id="hide">Hide</a> Instructions</p>
+
+        <section id="instructions">
+            <h3>Instructions</h3>
+
+            <p>This page uses a script that inputs a student's homework average, mid-term exam score, final exam score, and participation (all as integers). The student's final average and letter grade are calculated according to the following formula and table:</p>
+
+            <em><strong>final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR)</strong></em>
+            <br>
+            <br>
+
+            <pre>
+90 - 100	<strong>A</strong>
+80 -  89	<strong>B</strong>
+70 -  79	<strong>C</strong>
+60 -  69	<strong>D</strong>
+ 0 -  59	<strong>F</strong>
+</pre></section>
+
+        <br>
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>Homework Average</td>
+                    <td>
+                        <input type="text" name="hwAvg" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Midterm Exam Score</td>
+                    <td>
+                        <input type="text" name="midExam" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Final Exam Score</td>
+                    <td>
+                        <input type="text" name="finalExam" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Participation</td>
+                    <td>
+                        <input type="text" name="Participation" size="10">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="button" onclick="process()" value="SUBMIT">
+            <input type="reset" value="RESET">
+            <br>
+            <br>
+            <textarea rows=4 cols=40 name="result" readonly></textarea>
+        </form>
+        <br>
+        <br>
+
+    </section>
+    <hr>
+
+    <footer>
+
+        <a href="https://validator.w3.org" target="_blank"> HTML,CSS Validator</a>
+    </footer>
+</body>
+
+</html>

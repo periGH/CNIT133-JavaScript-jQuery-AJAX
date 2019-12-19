@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 1B</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style5.css">
+
+    <script src="hw5_part1b.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Homework 5 Part 1B</h1>
+    </header>
+
+    <section class="body">
+        <h2><strong>P</strong>ulldown <strong>M</strong>enus</h2>
+
+        <h3>Solution</h3>
+
+        <form>
+            <h4>Go to CCSF CNIT web pages.</h4>
+
+            <select name="destinationList" onchange="goToURL(this.form);">
+                <option>Choose Destination:</option>
+
+                <option value="https://www.ccsf.edu/Departments/Computer_Networking_and_Information_Technology/"> CCSF CNIT HOME PAGE </option>
+
+                <option value="http://www.ccsf.edu/en/educational-programs/ccsf-catalog/courses-by-department/cnit-courses.html"> CNIT COURSES</option>
+
+                <option value="http://www.ccsf.edu/dam/ccsf/documents/OfficeOfInstruction/Catalog/Programs/ComputerNetworkingandInformationTechnology/JavaScriptSpecialistCertificate.pdf"> JavaScript Scpecialist Certificate</option>
+
+            </select>
+        </form>
+
+        <br>
+        <br>
+
+        <form>
+            <h4>Go to another homework assignment.</h4>
+
+            <select name="destinationList">
+
+                <option value="https://hills.ccsf.edu/~psahan/cnit133/hw1_133.html">Homework 1</option>
+
+                <option value="https://hills.ccsf.edu/~psahan/cnit133/hw2_133.html">Homework 2</option>
+                <option value="https://hills.ccsf.edu/~psahan/cnit133/hw3_133.html">Homework 3</option>
+
+            </select>
+            <input type="button" value="Go" onclick="goToURL(this.form);">
+        </form>
+
+        <br>
+        <br>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML, CSS Validator</a>
+
+    </footer>
+</body>
+
+</html>

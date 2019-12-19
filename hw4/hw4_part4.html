@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="hw4.js"></script>
+    <script src="part4.js"></script>
+    <style>
+        td {
+            text-align: right;
+        }
+        
+        td:nth-child(n+2):nth-child(-n+4) input {
+            text-align: right;
+        }
+        
+        #errorMsg {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>Homework 4-Part 4</h1>
+    </header>
+    <section class="body">
+        <h2>Products And Retail Prices</h2>
+
+        <div id="errorMsg"></div>
+        <br>
+
+        <form name="myform">
+            <table>
+
+                <tr>
+                    <th>Product #</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="p1" size="10" value="1" disabled="disabled">
+                    </td>
+                    <td>
+                        <input type="text" name="qty1" size="5" />
+                    </td>
+                    <td>2.98</td>
+                    <td>
+                        <input type="text" name="a1" size="8" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="p2" size="10" value="2" disabled="disabled" />
+                    </td>
+                    <td>
+                        <input type="text" name="qty2" size="5" />
+                    </td>
+                    <td>4.50</td>
+                    <td>
+                        <input type="text" name="a2" size="8" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="p2" size="10" value="3" disabled="disabled" />
+                    </td>
+                    <td>
+                        <input type="text" name="qty3" size="5" />
+                    </td>
+                    <td>9.98</td>
+                    <td>
+                        <input type="text" name="a3" size="8" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="p4" size="10" value="4" disabled="disabled" />
+                    </td>
+                    <td>
+                        <input type="text" name="qty4" size="5" />
+                    </td>
+                    <td>4.49</td>
+                    <td>
+                        <input type="text" name="a4" size="8" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="p5" size="10" value="5" disabled="disabled" />
+                    </td>
+                    <td>
+                        <input type="text" name="qty5" size="5" />
+                    </td>
+                    <td>6.87</td>
+                    <td>
+                        <input type="text" name="a5" size="8" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="3">Total Amount Sold</th>
+                    <td>
+                        <input type="text" name="ts" size="8" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">
+                        <input type="button" value='Calculate' onclick="process()" />
+                        <input type="reset" value="Reset" size="10" />
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML, CSS Validator</a>
+    </footer>
+</body>
+
+</html>

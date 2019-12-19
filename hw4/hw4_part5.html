@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="hw4.js"></script>
+    <script src="part5.js"></script>
+    <style>
+        #list {
+            font-size: 20px;
+        }
+        
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>Homework 4 Part 5</h1>
+    </header>
+    <section class="body">
+        <h2>List Formatter</h2>
+
+        <form name="myform" method="POST">
+            <table>
+                <tr>
+                    <td>
+
+                        <div id="Error1"></div>
+                        <input type="text" name="item1" required="required" value="Apple" data-validation-error-msg="Item #1 missing" data-validation-error-msg-container="#Error1">
+
+                        <br>
+                        <br>
+                        <div id="Error2"></div>
+                        <input type="text" name="item2" required="required" value="Banana" data-validation-error-msg="Item #2 missing" data-validation-error-msg-container="#Error2">
+
+                        <br>
+                        <br>
+                        <div id="Error3"></div>
+                        <input type="text" name="item3" required="required" value="Orange" data-validation-error-msg="Item #3 missing" data-validation-error-msg-container="#Error3">
+                        <br>
+                        <br>
+                        <br>
+
+                        <input type="radio" name="format" id="0" value="0" checked>
+                        <label for="0">Unordered List</label>
+                        <br>
+                        <input type="radio" name="format" id="1" value="1">
+                        <label for="1">Ordered Number List</label>
+                        <br>
+                        <input type="radio" name="format" id="2" value="2">
+                        <label for="2">Ordered Letter List</label>
+                        <br>
+                        <br>
+
+                    </td>
+                    <td>
+                        <div id="list"></div>
+                        <textarea rows=8 cols=40 name="result" readonly></textarea>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Submit" onclick="process()">
+                        <input type="reset" value="Reset" onclick='document.getElementById("list").innerHTML = ""'>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br>
+
+        <!-- Begin code from http://www.formvalidator.net/ -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <script>
+            $.validate({
+                modules: 'html5',
+                errorMessagePosition: 'top'
+            });
+        </script>
+        <!--end-->
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML, CSS Validator</a>
+    </footer>
+</body>
+
+</html>

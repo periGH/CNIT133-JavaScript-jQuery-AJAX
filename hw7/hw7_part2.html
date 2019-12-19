@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style7.css">
+    <script src="hw7_part2.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Password Protection Page</h1>
+        <h1>Homework 7</h1>
+    </header>
+    <article class="body">
+        <h2>Part 2</h2>
+
+        <section>
+            <h3>Solution</h3>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="hw7_part2.js"></script>
+
+            <style>
+                #flip {
+                    padding: 5px;
+                    text-align: center;
+                    background-color: white;
+                    border: solid 1px black;
+                }
+                
+                #panel {
+                    padding: 20px;
+                    border: solid 1px black;
+                    display: none;
+                }
+                
+                mark {
+                    color: red;
+                    font-weight: bold;
+                    background-color: inherit;
+                }
+            </style>
+
+            <span id="flip">Login</span>
+            <br>
+            <form id="panel" name="myform">
+                <fieldset>
+                    <mark id="result"></mark>
+                    <br>
+                    <br> Password:
+                    <input type="password" name="password">
+                    <br>
+                    <br>
+                    <input type="button" onclick="process()" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </fieldset>
+            </form>
+
+        </section>
+
+    </article>
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML - CSS Validator</a>
+    </footer>
+</body>
+
+</html>

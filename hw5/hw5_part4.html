@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style5.css">
+    <script src="hw5_part4.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Homework 5 Part 4</h1>
+    </header>
+
+    <section class="body">
+        <h2><strong>N</strong>umbers</h2>
+
+        <h3>Enter a number between 10 and 100, then click Submit.</h3>
+
+        <form onsubmit="return process();" onreset="return init();">
+            <p>
+                Number:
+                <input type="text" id="num">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Start Over">
+            </p>
+
+            <p>
+                Message:
+                <br>
+                <textarea name="output" id="msg" rows="4" cols="40"></textarea>
+            </p>
+        </form>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML, CSS Validator</a>
+    </footer>
+</body>
+
+</html>

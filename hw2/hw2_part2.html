@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Homework 2- Part 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+
+    <style>
+        input {
+            text-align: right;
+        }
+        
+        body {
+            background-color: #FFE4C4;
+        }
+        
+        .body {
+            width: 750px;
+            margin: 0px auto;
+        }
+    </style>
+
+    <script>
+        function process() {
+
+            var number1, number2, number3, n1, n2, n3, sum, avg, min, max, product;
+
+            number1 = document.forms["myform"].elements["num1"].value;
+            number2 = document.forms["myform"].elements["num2"].value;
+            number3 = document.forms["myform"].elements["num3"].value;
+
+            n1 = parseInt(number1);
+            n2 = parseInt(number2);
+            n3 = parseInt(number3);
+
+            sum = n1 + n2 + n3;
+            avg = (n1 + n2 + n3) / 3;
+            min = Math.min(n1, n2, n3);
+            max = Math.max(n1, n2, n3);
+            product = (n1 * n2 * n3);
+
+            alert("This is the first number " + n1 + "\nThis is the second number you entered " + n2 +
+                "\nThe last number you entered " + n3 + "\nThe sum of the numbers is " + sum +
+                "\nThe average of the numbers is " + avg + "\nThe minimum number is " + min +
+                "\nThe maximum number is " + max + "\nThe product of the numbers are " + product);
+
+        }
+    </script>
+</head>
+
+<body>
+    <section class="body">
+        <form name="myform">
+
+            <table>
+
+                <tr>
+                    <td>First Number:</td>
+                    <td>
+                        <input type="text" name="num1" size="10">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Second Number:</td>
+                    <td>
+                        <input type="text" name="num2" size="10">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Third Number:</td>
+                    <td>
+                        <input type="text" name="num3" size="10">
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+            <input type="button" onclick="process()" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </form>
+    </section>
+</body>

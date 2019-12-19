@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="hw4.js"></script>
+    <script src="part2.js"></script>
+    <style>
+        td:first-child {
+            font-weight: bold;
+        }
+        
+        td:nth-child(n+2):nth-child(-n+3) input {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <br>
+        <br>
+        <h1>Homework 4-Part 2</h1>
+    </header>
+    <section class="body">
+        <h2>Gross Pay For Employees</h2>
+
+        <p>Input the number of hours worked and the hourly rate:</p>
+
+        <form name="myform">
+
+            <table>
+                <tr>
+                    <th>Employee</th>
+                    <th>Hours Worked</th>
+                    <th>Hourly Rate</th>
+                </tr>
+                <tr>
+                    <td>Employee 1</td>
+                    <td>
+                        <input type="number" min="0" name="hours1">
+                    </td>
+                    <td>
+                        <input type="number" min="0" name="rate1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employee 2</td>
+                    <td>
+                        <input type="number" min="0" name="hours2">
+                    </td>
+                    <td>
+                        <input type="number" min="0" name="rate2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employee 3</td>
+                    <td>
+                        <input type="number" min="0" name="hours3">
+                    </td>
+                    <td>
+                        <input type="number" min="0" name="rate3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employee 4</td>
+                    <td>
+                        <input type="number" min="0" name="hours4">
+                    </td>
+                    <td>
+                        <input type="number" min="0" name="rate4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employee 5</td>
+                    <td>
+                        <input type="number" min="0" name="hours5">
+                    </td>
+                    <td>
+                        <input type="number" min="0" name="rate5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employee 6</td>
+                    <td>
+                        <input type="number" min="0" name="hours6">
+                    </td>
+                    <td>
+                        <input type="number" min="0" name="rate6">
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <input type="button" value="Submit" onclick="process()">
+            <input type="reset" value="Reset">
+            <br>
+            <br>
+
+            <textarea rows=8 cols=40 name="result" readonly></textarea>
+            <br>
+            <br>
+
+        </form>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML, CSS Validator</a>
+    </footer>
+</body>
+
+</html>

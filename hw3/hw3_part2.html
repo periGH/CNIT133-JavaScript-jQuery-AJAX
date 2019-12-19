@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT 133 Homework 3">
+    <title>Part 2</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script src="part2.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        /*jQuery code for tooltip  */
+
+        $(function() {
+            $(document).tooltip();
+        });
+    </script>
+
+    <style>
+        td:first-child {
+            font-weight: bold;
+        }
+        
+        td:nth-child(2) input[size="20"] {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="body">
+        <h1>Homework 3 Part 2</h1>
+        <h2>Salesperson Earnings</h2>
+
+        <p>Click to <a id="show">Show</a> / <a id="hide">Hide</a> Instructions</p>
+
+        <section id="instructions">
+            <h3>Instructions</h3>
+
+            <p>A large company pays its salespeople on a commission basis. The salespeople receive $200 per week, plus 9% of their gross sales for that week. For example, a salesperson who sells $5000 worth of merchandise in a week receives $200 plus 9% of $5000, or a total of $650. You have been supplied with a list of the items sold by each salesperson. The value of these items are as follows:</p>
+
+            <pre>
+<strong>Item	 Value</strong>
+   1	239.99
+   2	129.75
+   3	 99.95
+   4	350.89
+</pre>
+            <br>
+
+            <p>Create a webpage that contains a script that includes at the top of your form a text box for the salesperson's name for the user to enter. When the user's mouse hovers over this name field, use the jQuery UI tooltip coding to display the message "Please make sure that the salesperson's name is spelled correctly". Next input that salesperson's items sold for last week, calculates how much the salesperson sold and how much they earned, and then output the results. Be sure to round the outputted results to 2 decimal places. Use form text boxes to input the number sold for each of the items 1-4. You should also check for valid numeric input and right-justify all amounts.</p>
+        </section>
+
+        <br>
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td colspan="2">
+                        <input type="text" name="name" size="40" title="Please make sure that the salesperson's name is spelled correctly.">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>
+                        <input type="text" name="item1" size="20">
+                    </td>
+                    <td>@ $239.99 each
+                        <td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td>
+                        <input type="text" name="item2" size="20">
+                    </td>
+                    <td>@ $129.75 each
+                        <td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>
+                        <input type="text" name="item3" size="20">
+                    </td>
+                    <td>@ $99.95 each
+                        <td>
+                </tr>
+                <tr>
+                    <td>Item 4</td>
+                    <td>
+                        <input type="text" name="item4" size="20">
+                    </td>
+                    <td>@ $350.89 each
+                        <td>
+                </tr>
+            </table>
+            <br>
+            <input type="button" onclick="process()" value="SUBMIT">
+            <input type="reset" value="RESET">
+            <br>
+            <br>
+            <textarea rows=6 cols=40 name="result" readonly></textarea>
+        </form>
+        <br>
+        <br>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML,CSS Validator</a>
+    </footer>
+</body>
+
+</html>

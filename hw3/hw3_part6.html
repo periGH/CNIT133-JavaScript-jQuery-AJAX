@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT 133 Homework 3">
+    <title>Part 6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="part6.js"></script>
+</head>
+
+<body onload="randomProblem()">
+
+    <section class="body">
+        <h1>Homework 3 Part 6</h1>
+        <h2>Multiplication Test</h2>
+
+        <p>Click to <a id="show">Show</a> / <a id="hide">Hide</a> Instructions</p>
+
+        <section id="instructions">
+            <h3>Instructions</h3>
+
+            <p>Computers are playing an increasing role in education. Write a program that will help an elementary school student learn multiplication. Use Math.random to produce two one-digit integers (0-9). It should then display a question such as:
+                <br>
+                <br> How much is 6 times 7?
+                <br>
+                <br> The student then types the answer into a text field. Your program checks the student's answer. If it is correct, display the string "Very good!" in an alert or directly on the page, and then prompt the user to see whether they wish to continue by using the confirm statement. If true, then generate a new question. If not, then exit the script.
+                <br>
+                <br> If the answer to the multiplication question is wrong, display the string "No. Please try again." in an alert or directly on the page, and let the student try the same question again repeatedly until the student finally gets it right. A separate function should be used to generate each new question. This function should be called once when the script begins execution and each time the user answers the question correctly. Note that whether the answer is correct or not, you should clear the answer box after the question is answered.</p>
+        </section>
+
+        <br>
+        <form name="myform">
+            <textarea rows=4 cols=40 name="infobox" readonly>Press SUBMIT to begin.</textarea>
+            <br>
+            <input type="text" name="response" size="12">
+            <br>
+            <br>
+            <input type="button" onclick="mathGame()" value="SUBMIT">
+        </form>
+        <br>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML,CSS Validator</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .draggable {
+            background: white;
+            width: 500px;
+            padding: 0.5em;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $(".draggable").draggable({
+                snap: true
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="hw4.js"></script>
+    <script src="part1.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <br>
+        <br>
+        <h1>Homework 4-Part 1</h1>
+    </header>
+    <section class="body">
+        <h2>Solution</h2>
+
+        <div class="draggable">
+            <script>
+                part1a();
+            </script>
+        </div>
+
+        <br>
+
+        <div class="draggable">
+            <script>
+                part1b();
+            </script>
+        </div>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML, CSS Validator</a>
+    </footer>
+
+</body>
+
+</html>

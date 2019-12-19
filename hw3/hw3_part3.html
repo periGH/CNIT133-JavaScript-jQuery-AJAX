@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT 133 Homework 3">
+    <title>Part 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="part3.js"></script>
+    <style>
+        td:first-child {
+            font-weight: bold;
+        }
+        
+        td:nth-child(2) input {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="body">
+        <h1>Homework 3 Part 3</h1>
+        <h2>Department Store Credit Account</h2>
+
+        <p>Click to <a id="show">Show</a> / <a id="hide">Hide</a> Instructions</p>
+
+        <section id="instructions">
+            <h3>Instructions</h3>
+
+            <p>Create a webpage containing a script that will determine whether a department-store customer has exceeded the credit limit on their charge account.
+                <br>
+                <br> For input, the following facts should be available in form input text boxes:
+                <br>
+                <br> a) Account number
+                <br> b) Balance at the beginning of the month
+                <br> c) Total of all items charged by this customer this month
+                <br> d) Total of all credits applied to this customer's account this month
+                <br> e) Allowed credit limit
+                <br>
+                <br> Validate whether the account number has been entered and that the amount items are numeric. If there is an error then display an error message using an alert, innerHTML, or jQuery.
+                <br>
+                <br> Calculate the new balance (which equals beginning balance + charges – credits), and determine whether the new balance exceeds the customer's credit limit and by how much. Then display in a form textarea, the new balance and whether the customer has exceeded their credit limit and by how much, by displaying the message “Credit limit exceeded by X”, where X is the amount the credit limit was exceeded. If the customer is at or under their credit limit then display their new balance and the message "Credit available is X", where X is the amount of their available credit.
+                <br>
+                <br> In addition, define a 'Click to change Textarea Display' button at the bottom of the form. Use jQuery to define a ready handler that defines a click event handler for the button, such that clicking the button changes the textarea results to a background color of black and changes the textarea text to a white color, large, and bold-faced.</p>
+        </section>
+
+        <br>
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>Account number</td>
+                    <td>
+                        <input type="text" name="acct" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Balance at the beginning of the month</td>
+                    <td>
+                        <input type="text" name="bal" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total of all items charged</td>
+                    <td>
+                        <input type="text" name="charges" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total of all credits applied</td>
+                    <td>
+                        <input type="text" name="credApplied" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Allowed credit limit</td>
+                    <td>
+                        <input type="text" name="credLimit" size="10">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="button" onclick="process()" value="SUBMIT">
+            <input type="reset" value="RESET">
+            <br>
+            <br>
+            <textarea rows=4 cols=40 name="result" readonly></textarea>
+            <br>
+            <br>
+            <input type="button" onclick="changeDisplay()" value="CHANGE TEXTAREA DISPLAY">
+        </form>
+        <br>
+        <br>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML,CSS Validator</a>
+    </footer>
+</body>
+
+</html>

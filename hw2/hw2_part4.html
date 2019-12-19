@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT-133 Javascript Homework 3-Part 4">
+    <title>Writing a Table on Same Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+
+    <script type="text/javascript">
+        function process() {
+
+            // Set the htmlOutput variable to a string that contains an HTML table
+
+            var htmlOutput = "";
+
+            htmlOutput += "<table border = '1'>";
+            htmlOutput += "<tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
+            htmlOutput += "<tr><td>7</td><td>49</td><td>343</tr>";
+            htmlOutput += "<tr><td>8</td><td>64</td><td>512</tr>";
+            htmlOutput += "<tr><td>9</td><td>81</td><td>729</tr>";
+            htmlOutput += "<tr><td>10</td><td>100</td><td>1000</tr>";
+
+            // Set the contents of the <div> block to the contents of htmlOutput
+
+            document.getElementById("theTable").innerHTML = htmlOutput;
+
+        }
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #FFE4C4;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div align="center">
+
+        <h3>Table of Squares and Cubes for Numbers 1-6</h3>
+
+        <div align="center">
+
+            <!-- The following script should replace the above XHTML table coding -->
+
+            <script type="text/javascript">
+                document.write("<table border = '1'><tr> " + "<th>Number</th> <th>Square</th> <th>Cube</th> </tr>");
+                document.write("<tr align=\"right\"><td>" + 1 + "</td>" + "<td>" + Math.pow(1, 2) + "</td>" + "<td>" + Math.pow(1, 3) + "</td></tr>");
+                document.write("<tr align=\"right\"><td>" + 2 + "</td>" + "<td>" + Math.pow(2, 2) + "</td>" + "<td>" + Math.pow(2, 3) + "</td></tr>");
+                document.write("<tr align=\"right\"><td>" + 3 + "</td>" + "<td>" + Math.pow(3, 2) + "</td>" + "<td>" + Math.pow(3, 3) + "</td></tr>");
+                document.write("<tr align=\"right\"><td>" + 4 + "</td>" + "<td>" + Math.pow(4, 2) + "</td>" + "<td>" + Math.pow(4, 3) + "</td></tr>");
+                document.write("<tr align=\"right\"><td>" + 5 + "</td>" + "<td>" + Math.pow(5, 2) + "</td>" + "<td>" + Math.pow(5, 3) + "</td></tr>");
+                document.write("<tr align=\"right\"><td>" + 6 + "</td>" + "<td>" + Math.pow(6, 2) + "</td>" + "<td>" + Math.pow(6, 3) + "</td></tr>");
+
+                document.write("</table>");
+            </script>
+
+            <br>
+
+            <p><b>Click on button to create the Table of Squares
+ and Cubes<br> for Numbers 7-10 directly below this button</b></p>
+
+            <form>
+
+                <input type="button" value="Create and Output Table" onclick="process();">
+
+            </form>
+
+        </div>
+
+        <br>
+
+        <!-- id of theTable is where the output will be witten by the document.getElementById statement -->
+
+        <div align="center" id="theTable"></div>
+
+    </div>
+
+</body>
+
+</html>

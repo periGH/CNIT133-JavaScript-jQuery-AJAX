@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT 133 Homework 3">
+    <title>Extra Credit</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="extra.js"></script>
+
+    <style>
+        table,
+        tr,
+        td {
+            border: 2px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        
+        tr,
+        td,
+        textarea {
+            text-align: center;
+            border: 0px;
+        }
+        
+        tr:first-child td {
+            height: 125px;
+            font: bold 72px/30px Comic Sans MS;
+        }
+        
+        input[type="button"] {
+            background-color: white;
+            border: 2px solid black;
+            color: red;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            border-radius: 12px;
+            outline: none;
+        }
+        
+        input[type="button"]:active {
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="body">
+        <h1>Homework 3 Extra Credit</h1>
+        <h2>Craps</h2>
+
+        <p>Click to <a id="show">Show</a> / <a id="hide">Hide</a> Instructions</p>
+
+        <section id="instructions">
+            <h3>Instructions</h3>
+            <p>Roll two dice. If the sum of the dice is 7 or 11 on the first throw, you win. If the sum is 2, 3, or 12 on the first throw (called "craps"), you lose. If the sum is 4, 5, 6, 8, 9, or 10 on the first throw, that sum becomes your "point". To win, you must continue rolling the dice until you "make your point". You lose if you roll a 7 before making the point.</p>
+        </section>
+
+        <br>
+
+        <table>
+            <tr>
+                <td id="dice">C R A P S</td>
+            </tr>
+            <tr>
+                <td>
+                    <form name="myform">
+                        <textarea rows=4 cols=40 name="gametable" readonly>
+
+                            ROLL THE DICE TO START A NEW GAME</textarea>
+                        <br>
+                        <br>
+                        <input type="button" onclick="rollDiceButton()" value="ROLL THE DICE">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML,CSS Validator</a>
+    </footer>
+</body>
+
+</html>

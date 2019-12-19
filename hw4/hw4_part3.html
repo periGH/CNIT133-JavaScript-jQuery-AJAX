@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="hw4.js"></script>
+    <script src="part3.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        td:nth-child(n+2):nth-child(-n+3) {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>Homework 4-Part 3</h1>
+    </header>
+    <section class="body">
+        <h2>Compound Interest</h2>
+
+        <script>
+            compoundInterestTable(1000, .05, 10);
+            compoundInterestTable(1000, .06, 10);
+            compoundInterestTable(1000, .07, 10);
+            compoundInterestTable(1000, .08, 10);
+            compoundInterestTable(1000, .09, 10);
+            compoundInterestTable(1000, .1, 10);
+        </script>
+
+        <script>
+            $("tr:even").css("background-color", "#ffffff");
+            $("tr:odd").css("background-color", "#e6e6e6");
+        </script>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML, CSS Validator</a>
+    </footer>
+</body>
+
+</html>

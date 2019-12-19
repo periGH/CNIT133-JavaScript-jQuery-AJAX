@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT 133 Homework 3">
+    <title>Part 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="part4.js"></script>
+    <style>
+        td:first-child {
+            font-weight: bold;
+        }
+        
+        td:nth-child(2) input {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="body">
+        <h1>Homework 3 Part 4</h1>
+        <h2>Palindrome Checker</h2>
+
+        <p><a id="show">Show</a> / <a id="hide">Hide</a> Instructions</p>
+        <section id="instructions">
+            <h3>Instructions</h3>
+            <p>A palindrome is a number or a text phrase that reads the same backward and forward. This script determines whether or not a five-digit integer is a palindrome. If the number is not five digits long, an error message will be displayed.</p>
+        </section>
+
+        <br>
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>Enter five digits</td>
+                    <td>
+                        <input type="text" name="phrase" size="12" title="Input a five-digit integer not starting with zero.">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="button" onclick="process()" value="SUBMIT">
+            <input type="reset" value="RESET">
+            <br>
+            <br>
+            <textarea rows=4 cols=40 name="result" readonly></textarea>
+        </form>
+        <br>
+        <br>
+
+    </section>
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML,CSS Validator</a>
+    </footer>
+</body>
+
+</html>

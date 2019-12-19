@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style6.css">
+
+    <script src="hw6_part3.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Homework 6</h1>
+    </header>
+    <section class="body">
+        <h2>Part 3</h2>
+
+        <h3>Solution</h3>
+        <script>
+            printDate();
+        </script>
+
+        <br>
+
+        <form name="myform">
+
+            <label for="phone_us">2. Enter a Telephone Number: </label>
+            <input type="text" class="phone_us" id="phone_us">
+
+            <script type="text/javascript" src="include/jquery-latest.min.js"></script>
+            <script type="text/javascript" src="include/jquery.mask.min.js"></script>
+            <script src="include/examples.js"></script>
+
+            <input type="button" onclick="process()" value="SUBMIT">
+            <input type="reset" value="CLEAR">
+            <br>
+            <br> Area code:
+            <input type="text" name="area" size="3" readonly> 7 digit phone number:
+            <input type="text" name="phone" size="8" readonly>
+            <br>
+            <br>
+            <textarea rows=4 cols=40 name="result" readonly></textarea>
+
+        </form>
+    </section>
+    <br>
+
+    <footer>
+
+        <a href="https://validator.w3.org" target="_blank"> HTML - CSS Validator</a>
+
+    </footer>
+</body>
+
+</html>

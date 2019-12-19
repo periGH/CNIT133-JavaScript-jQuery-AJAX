@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style8.css">
+    <script src="hw8_part3.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Homework 8</h1>
+    </header>
+    <article class="body">
+        <h2>Part 3</h2>
+        <section>
+            <h3>Solution</h3>
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <link rel="stylesheet" href="/resources/demos/style.css">
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                $(function() {
+                    $("#datepicker").datepicker();
+                });
+            </script>
+
+            <section>
+                <h4>Today's Date</h4>
+                <div id="datepicker"></div>
+            </section>
+
+            <section id="poll">
+                <h4>Have you made your New Year's Resolution?</h4>
+                <form>
+                    <input type="radio" name="vote" value="0" onclick="getVote(this.value)"> YES
+                    <br>
+                    <br>
+                    <input type="radio" name="vote" value="1" onclick="getVote(this.value)"> NO
+                    <br>
+                    <br>
+                </form>
+            </section>
+        </section>
+    </article>
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML - CSS Validator</a>
+    </footer>
+</body>
+
+</html>

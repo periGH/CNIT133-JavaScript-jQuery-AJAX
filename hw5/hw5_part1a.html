@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 1A</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style5.css">
+
+    <script src="part1a.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Homework 5 Part 1A</h1>
+    </header>
+
+    <section class="body">
+        <h2><strong>F</strong>orm <strong>V</strong>alidation</h2>
+
+        <h3>Solution</h3>
+
+        <form name="myform">
+
+            <h4>What is your name?</h4>
+
+            <input type="text" name="name">
+            <br>
+            <br>
+
+            <h4>Highest level of education completed.</h4>
+
+            <input type="radio" id="hs" name="educ" value="hs">
+            <label for="hs">High School Diploma</label>
+            <br>
+
+            <input type="radio" id="as" name="educ" value="as">
+            <label for="as">Associate Degree</label>
+            <br>
+
+            <input type="radio" id="ba" name="educ" value="ba">
+            <label for="ba">Bachelor's Degree</label>
+            <br>
+
+            <input type="radio" id="ma" name="educ" value="ma">
+            <label for="ma">Master's Degree</label>
+            <br>
+
+            <input type="radio" id="do" name="educ" value="do">
+            <label for="do">Doctoral Degree</label>
+            <br>
+            <br>
+
+            <h4>Which computer languages are you familiar with?</h4>
+
+            <input type="checkbox" id="java" name="lang0" value="java">
+            <label for="java">Java</label>
+            <br>
+
+            <input type="checkbox" id="python" name="lang1" value="python">
+            <label for="python">JavaScript</label>
+            <br>
+
+            <input type="checkbox" id="ruby" name="lang2" value="ruby">
+            <label for="ruby">HTML5</label>
+            <br>
+
+            <input type="checkbox" id="swift" name="lang3" value="swift">
+            <label for="swift">MYSQL</label>
+            <br>
+            <br>
+
+            <h4>Please select your preferred Operating System.</h4>
+
+            <select name="os">
+                <option value="">&nbsp;</option>
+                <option value="android">Android</option>
+                <option value="ios">iOS</option>
+                <option value="linux">Linux</option>
+                <option value="macos">MacOS</option>
+                <option value="windows">Windows</option>
+            </select>
+            <br>
+            <br>
+
+            <input type="button" onclick="validateForm()" value="SUBMIT">
+        </form>
+        <br>
+        <br>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        <a href="https://validator.w3.org" target="_blank"> HTML - CSS Validator</a>
+
+    </footer>
+</body>
+
+</html>

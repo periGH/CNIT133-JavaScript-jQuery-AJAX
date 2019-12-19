@@ -1,0 +1,59 @@
+body {
+    background-color: seashell;
+    text-align: center;
+    /* Hack for IE/Win */
+}
+
+.content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* or use margin: 0px auto; */
+}
+
+.body {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    /* IE hack */
+}
+
+textarea {
+    font-size: 20px;
+}
+
+table {
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+
+table,
+tr {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th,
+td {
+    padding: 12px;
+}
+
+th {
+    font-family: 'Arial', serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+td {
+    font-family: 'Arial', serif;
+    font-size: 12px;
+    text-align: left;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
